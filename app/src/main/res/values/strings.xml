@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">MJPEG Streamer</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="title_public_ip">Public IP</string>
+    <string name="title_private_ip">Private IP</string>
+    <string name="title_port">通訊埠</string>
+    <string name="title_camera">相機</string>
+    <string name="title_resolution">視訊解析度</string>
+    <string name="title_rotation">螢幕方向</string>
+    <string name="title_run_on_boot">開機後自動執行</string>
+    <string name="title_allow_all_ips">允許所有 IPs 訪問存取</string>
+    <string name="title_above_lock_screen">螢幕鎖定後背景執行</string>
+    <string name="summary_above_lock_screen">當螢幕鎖定後程式依然可以保持運行</string>
+    <string name="title_discoverable">開啟簡單服務發現協定 SSDP</string>
+    <string name="title_ssdp_id">SSDP ID</string>
+    <string name="title_app_version">應用程式版本</string>
+    <string name="camera_0">後置鏡頭</string>
+    <string name="camera_1">前置鏡頭</string>
+    <string name="label_change_camera">切換相機</string>
+    <string name="label_remove_port">移除端口映射</string>
 </resources>

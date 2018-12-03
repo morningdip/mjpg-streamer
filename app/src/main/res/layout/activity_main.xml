@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.morningdip.mjpegstreamer.activity.MainActivity">
+
+    <include layout="@layout/content_main" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+
+        app:menu_colorNormal="#0078d7"
+        app:menu_colorPressed="#00599D"
+        app:menu_colorRipple="#00467B"
+        app:menu_icon="@drawable/menu"
+        app:menu_labels_ellipsize="end"
+        app:menu_labels_singleLine="true"
+        app:menu_backgroundColor="#00FFFFFF"
+        app:menu_labels_position="left">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settings"
+            app:fab_size="normal"
+            app:fab_colorNormal="#0277BD"
+            app:menu_colorPressed="#00599D"
+            app:menu_colorRipple="#00467B"
+            app:fab_label="@string/title_activity_settings" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera_rear"
+            app:fab_size="normal"
+            app:fab_colorNormal="#0277BD"
+            app:menu_colorPressed="#00599D"
+            app:menu_colorRipple="#00467B"
+            app:fab_label="@string/label_change_camera" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_remove_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/remove_port"
+            app:fab_size="normal"
+            app:fab_colorNormal="#0277BD"
+            app:menu_colorPressed="#00599D"
+            app:menu_colorRipple="#00467B"
+            app:fab_label="@string/label_remove_port" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

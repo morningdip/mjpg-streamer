@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:defaultValue="192.168.11.1"
+        android:key="public_ip"
+        android:title="@string/title_public_ip"
+        android:enabled="false"
+        android:selectable="false"
+        android:shouldDisableView="false" />
+    <EditTextPreference
+        android:defaultValue="192.168.11.1"
+        android:key="private_ip"
+        android:title="@string/title_private_ip"
+        android:enabled="false"
+        android:selectable="false"
+        android:shouldDisableView="false" />
+    <EditTextPreference
+        android:defaultValue="8090"
+        android:key="port"
+        android:inputType="numberDecimal"
+        android:digits="0123456789"
+        android:title="@string/title_port" />
+    <ListPreference
+        android:defaultValue="0"
+        android:key="cam"
+        android:title="@string/title_camera" />
+    <ListPreference
+        android:defaultValue="640x480"
+        android:key="resolution"
+        android:title="@string/title_resolution" />
+    <ListPreference
+        android:defaultValue="0"
+        android:entries="@array/RotationText"
+        android:entryValues="@array/Rotation"
+        android:key="rotation"
+        android:title="@string/title_rotation" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="run_on_boot"
+        android:title="@string/title_run_on_boot" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="allow_all_ips"
+        android:title="@string/title_allow_all_ips" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="above_lock_screen"
+        android:title="@string/title_above_lock_screen"
+        android:summary="@string/summary_above_lock_screen" />
+    <EditTextPreference
+        android:key="app_version"
+        android:title="@string/title_app_version"
+        android:enabled="false"
+        android:saveEnabled="false"
+        android:persistent="false"
+        android:selectable="false"
+        android:shouldDisableView="false" />
+</PreferenceScreen>
